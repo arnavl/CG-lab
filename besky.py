@@ -5,15 +5,6 @@ from graphics import *
 win = GraphWin('clsc',300,300)
 win.setCoords(-300,-300,300,300)
 
-ymax = int(input("enter ymax of window"))
-xmax = int(input("enter xmax of window"))
-ymin = int(input("enter ymin of window"))
-xmin = int(input("enter xmin of window"))
-
-Bresenham(xmin,ymin,xmin,ymax,win,"black")
-Bresenham(xmin,ymin,xmax,ymin,win,"black")
-Bresenham(xmax,ymin,xmax,ymax,win,"black")
-Bresenham(xmin,ymax,xmax,ymax,win,"black")
 
 def clip():
 	p=[-x1+x0,x1-x0,-y1+y0,y1-y0]
@@ -47,8 +38,6 @@ xmax=int(input("Enter xmax : "))
 ymax=int(input("Enter ymax : "))
 rec=Rectangle(Point(xmin,ymin) , Point(xmax,ymax))
 rec.draw(win)
-
 clip()
-
 win.getMouse()
 win.close

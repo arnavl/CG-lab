@@ -81,7 +81,7 @@ for i in range(sides):
 for i in range(sides-1):
     Bresenham(s[i][0],s[i][1],s[i+1][0],s[i+1][1],win,"black")
 
-Bresenham(s[-1][0],s[-1][1],s[0][0],s[0][1],win,'blue')
+Bresenham(s[-1][0],s[-1][1],s[0][0],s[0][1],win,'black')
 
 xmin=int(input("Enter xmin : "))
 ymin=int(input("Enter ymin : "))
@@ -90,6 +90,7 @@ ymax=int(input("Enter ymax : "))
 rec=Rectangle(Point(xmin,ymin) , Point(xmax,ymax))
 rec.draw(win)
 cp=[[xmin,ymin],[xmin,ymax],[xmax,ymax],[xmax,ymin]]
+
 
 clip()
 

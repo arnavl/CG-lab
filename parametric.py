@@ -41,7 +41,6 @@ xmax=int(input("Enter xmax : "))
 ymax=int(input("Enter ymax : "))
 rec=Rectangle(Point(xmin,ymin) , Point(xmax,ymax))
 rec.draw(win)
-
 clip()
 
 win.getMouse()
